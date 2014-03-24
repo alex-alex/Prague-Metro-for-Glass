@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="text_short_important">90px</dimen>
+    <dimen name="text_xlarge">70px</dimen>
+    <dimen name="text_large">50px</dimen>
+    <dimen name="text_normal">40px</dimen>
+    <dimen name="text_small">34px</dimen>
+    <dimen name="text_xsmall">30px</dimen>
+    <dimen name="text_footer">26px</dimen>
+    <!-- for progressbar: -->
+    <dimen name="slider_bar_height">12.0px</dimen>
+</resources>

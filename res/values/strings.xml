@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">Subway Stations</string>
+    <string name="trigger_stations">show subway stations</string>
+    <string name="loading">Loading …</string>
+    <string name="get_directions">Get directions</string>
+    <string name="error_please_try_again">Error - please try again.</string>
+    <string name="no_location">No location.\nConnect your phone.</string>
+	<string name="no_stations_nearby">No stations nearby</string>
+    
+</resources>

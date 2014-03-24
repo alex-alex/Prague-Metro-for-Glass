@@ -1,0 +1,130 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="@android:style/Theme.DeviceDefault">
+        <!-- Customize your theme here. -->
+    </style>
+
+    <style name="Layout">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:orientation">vertical</item>
+    </style>
+
+    <style name="Layout.Card">
+        <item name="android:background">@color/black</item>
+        <item name="android:orientation">horizontal</item>
+    </style>
+
+    <style name="Layout.Right">
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_weight">1</item>
+    </style>
+
+    <style name="Layout.Dark">
+        <item name="android:background">@color/black_transparent</item>
+    </style>
+
+    <style name="Layout.Center">
+        <item name="android:layout_centerInParent">true</item>
+        <item name="android:gravity">center</item>
+    </style>
+
+    <style name="TextView" parent="android:Widget.DeviceDefault.TextView">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+
+    <style name="TextView.Title">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:paddingLeft">20dp</item>
+        <item name="android:paddingTop">20dp</item>
+        <item name="android:paddingRight">20dp</item>
+        <item name="android:textSize">@dimen/text_large</item>
+        <item name="android:maxLines">4</item>
+        <item name="android:ellipsize">end</item>
+    </style>
+
+    <style name="TextView.Subtitle">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:paddingLeft">20dp</item>
+        <item name="android:paddingRight">20dp</item>
+        <item name="android:textSize">@dimen/text_small</item>
+        <item name="android:textColor">@color/gray</item>
+    </style>
+
+    <style name="TextView.XLarge">
+        <item name="android:textSize">@dimen/text_xlarge</item>
+        <item name="android:padding">10dp</item>
+        <item name="android:drawablePadding">8dp</item>
+        <item name="android:layout_centerInParent">true</item>
+    </style>
+
+    <style name="TextView.Footer">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:gravity">bottom|right</item>
+        <item name="android:paddingLeft">20dp</item>
+        <item name="android:paddingBottom">20dp</item>
+        <item name="android:paddingRight">40dp</item>
+        <item name="android:textSize">@dimen/text_footer</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <style name="TextView.Grace">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_centerInParent">true</item>
+        <item name="android:paddingBottom">10dp</item>
+        <item name="android:textSize">@dimen/text_xsmall</item>
+    </style>
+
+    <style name="TextView.Loading">
+        <item name="android:textSize">@dimen/text_large</item>
+        <item name="android:layout_centerInParent">true</item>
+    </style>
+
+    <style name="TextView.Notification">
+        <item name="android:textSize">@dimen/text_normal</item>
+        <item name="android:maxLines">2</item>
+        <item name="android:ellipsize">end</item>
+        <item name="android:paddingTop">4dp</item>
+        <item name="android:paddingBottom">4dp</item>
+        <item name="android:paddingLeft">20dp</item>
+        <item name="android:paddingRight">20dp</item>
+    </style>
+
+    <style name="TextView.Notification.Secondary">
+        <item name="android:textColor">@color/gray</item>
+    </style>
+
+    <style name="ProgressBar" parent="android:Widget.DeviceDefault.ProgressBar.Horizontal">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_alignParentBottom">true</item>
+        <item name="android:indeterminate">true</item>
+    </style>
+
+    <style name="CardScrollView">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">match_parent</item>
+    </style>
+
+    <style name="ImageView">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+
+    <style name="ImageView.Left">
+        <item name="android:layout_width">213px</item>
+        <item name="android:layout_height">match_parent</item>
+    </style>
+
+    <style name="ImageView.FullScreen">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:scaleType">centerCrop</item>
+    </style>
+
+</resources>
