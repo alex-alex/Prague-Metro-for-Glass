@@ -6,25 +6,70 @@
 
     <ImageView
         android:id="@+id/image"
-        style="@style/ImageView.Left"/>
+        style="@style/ImageView.Left"
+        android:background="@color/gray" />
 
     <LinearLayout style="@style/Layout.Right">
 
-        <TextView
-            android:id="@+id/name"
-            style="@style/TextView.Title"/>
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content">
 
-        <TextView
-            android:id="@+id/category"
+            <TextView
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                />
+
+            <me.grantland.widget.AutofitTextView
+                android:id="@+id/lineLabel"
+                style="@style/TextView.Title"
+                android:singleLine="true"
+                android:layout_width="55dp"
+                android:gravity="center"
+                android:text="X" />
+
+            <me.grantland.widget.AutofitTextView
+                android:id="@+id/nameLabel"
+                style="@style/TextView.Title"
+                android:singleLine="true"
+                android:text="Tajná"
+                android:paddingLeft="0dp"
+                />
+
+        </LinearLayout>
+
+        <me.grantland.widget.AutofitTextView
+            android:id="@+id/prevStationTitleLabel"
             style="@style/TextView.Subtitle"
-            />
+            android:singleLine="true"
+            android:text="> Odcamcaď" />
 
-        <TextView
-            android:id="@+id/hours"
-            style="@style/TextView.Subtitle"/>
+        <me.grantland.widget.AutofitTextView
+            android:id="@+id/prevStationLabel"
+            style="@style/TextView.Subtitle"
+            android:singleLine="true"
+            android:gravity="center"
+            android:text="někdy" />
 
-        <TextView
-            android:id="@+id/distance"
-            style="@style/TextView.Footer"/>
+        <me.grantland.widget.AutofitTextView
+            android:id="@+id/nextStationTitleLabel"
+            style="@style/TextView.Subtitle"
+            android:singleLine="true"
+            android:text="> Pocamcaď" />
+
+        <me.grantland.widget.AutofitTextView
+            android:id="@+id/nextStationLabel"
+            style="@style/TextView.Subtitle"
+            android:singleLine="true"
+            android:gravity="center"
+            android:text="nikdy" />
+
+        <me.grantland.widget.AutofitTextView
+            android:id="@+id/distanceLabel"
+            style="@style/TextView.Footer"
+            android:singleLine="true"
+            android:text="1000 km" />
+
     </LinearLayout>
 </LinearLayout>

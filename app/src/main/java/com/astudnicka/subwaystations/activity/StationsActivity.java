@@ -12,16 +12,10 @@ import android.view.MenuItem;
 
 import com.astudnicka.subwaystations.R;
 import com.astudnicka.subwaystations.adapter.StationsAdapter;
-//import cz.destil.glasquare.api.Api;
-//import cz.destil.glasquare.api.ExploreVenues;
-//import cz.destil.glasquare.util.DebugLog;
-//import cz.destil.glasquare.util.IntentUtils;
 import com.astudnicka.subwaystations.model.Station;
 import com.astudnicka.subwaystations.model.Stations;
+import com.astudnicka.subwaystations.util.IntentUtils;
 import com.astudnicka.subwaystations.util.LocationUtils;
-/*import retrofit.Callback;
-import retrofit.RetrofitError;
-import retrofit.client.Response;*/
 import com.astudnicka.subwaystations.util.MathUtils;
 
 class StationsComparator implements Comparator<Station> {
@@ -67,7 +61,7 @@ public class StationsActivity extends CardScrollActivity {
     @Override
     public boolean onPrepareOptionsMenu(Menu menu) {
         if (mSelectedStation != null) {
-            //menu.findItem(R.id.menu_tips).setEnabled(mSelectedVenue.hasTips);
+
         }
         return super.onPrepareOptionsMenu(menu);
     }
@@ -77,7 +71,7 @@ public class StationsActivity extends CardScrollActivity {
         if (mSelectedStation != null) {
             switch (item.getItemId()) {
                 case R.id.menu_navigate:
-                    //IntentUtils.launchNavigation(this, mSelectedVenue.latitude, mSelectedVenue.longitude);
+                    IntentUtils.launchNavigation(this, mSelectedStation.getLatitude(), mSelectedStation.getLongitude(), "w");
                     return true;
             }
         }
